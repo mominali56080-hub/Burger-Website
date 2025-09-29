@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Animated Portfolio</title>
+
+  <style>
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+  }
+  
+  /* Welcome Section */
+  #welcome {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .welcome-text h1 {
+    font-size: 3rem;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .welcome-text p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: slideIn 2s ease-out;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1f6e8c;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .card a:hover {
+    color: #2980b9;
+  }
+  
+  /* Footer Section */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+/* Welcome Section */
+#welcome {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  animation: slideIn 1.5s ease-out;
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: slideIn 2s ease-out;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f6e8c;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Larger Screens */
+@media (max-width: 768px) {
+  #welcome {
+    padding: 80px 0;
+  }
+
+  .welcome-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-text p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* For Small Screens (Mobile) */
+@media (max-width: 480px) {
+  #welcome {
+    padding: 60px 0;
+  }
+
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <header id="welcome">
+    <div class="welcome-text">
+      <h1>Welcome to My Portfolio!</h1>
+      <p>I am a Front-End Developer</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div><br><br>
+    <div class="name">
+      <img src="momin.png" alt="">
+    </div>
+  </header>
+
+        
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>HTML, CSS, and JavaScript Project</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Responsive Web Design</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>JavaScript Animation</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

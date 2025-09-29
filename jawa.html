@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Name</h2>
+<input type="text" id="name"> 
+<h2> Father Name</h2>
+<input type="text" id="fname">
+<h2>Class</h2>
+<input type="text" id="class">
+<h2>Email</h2>
+<input type="text" id="email"><br><br>
+
+
+<button onclick="on()">submit</button>
+<button onclick="window.location.reload()">Reset</button>
+
+
+<br><br>
+<input type="text" id="n" placeholder="name">
+<input type="text" id="f" placeholder="Father">
+<input type="text" id="c" placeholder="Class">
+<input type="text" id="e" placeholder="Email">
+
+<script>
+    function on(){
+    var name = document.getElementById('name').value;
+    var Fname = document.getElementById('fname').value;
+    var clas = document.getElementById('class').value;
+    var eml = document.getElementById('email').value;
+
+    document.getElementById('n').value = name;
+    document.getElementById('f').value = fname;
+    document.getElementById('c').value = clas;
+    document.getElementById('e').value = email;
+}
+</script>
+
+       
+    
+      
+
+
+    
+</body>
+</html>
